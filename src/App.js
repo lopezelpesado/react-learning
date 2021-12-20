@@ -1,4 +1,5 @@
 import Clock from "./Clock";
+import Greeting from "./Greeting";
 import Toggle from "./Toggle";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
     <Clock />
     <Toggle />
+    <Greeting isLoggedIn={true} />
     </>
   );
 }
