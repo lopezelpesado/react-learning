@@ -1,21 +1,25 @@
 import React from "react";
+import WarningBanner from "./WarningBanner";
 
 class Toggle extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {isToggleOn: true};
+        this.state = {showWarning: true};
     }
 
     handleClick = () => {
-        this.setState(prevState => ({isToggleOn: !prevState.isToggleOn
+        this.setState(prevState => ({showWarning: !prevState.showWarning
         }));
     }
 
     render() {
         return (
+            <>
+            <WarningBanner warn={this.state.showWarning} />
             <button onClick={this.handleClick}>
-                {this.state.isToggleOn ? "ON" : "OFF"}
+                {this.state.showWarning ? "ON" : "OFF"}
             </button>
+            </>
         );
     }
 }
