@@ -1,5 +1,4 @@
 import Clock from "./Clock";
-import Greeting from "./Greeting";
 import LoginControl from "./LoginControl";
 import Toggle from "./Toggle";
 
