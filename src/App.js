@@ -1,5 +1,6 @@
 import Clock from "./Clock";
 import LoginControl from "./LoginControl";
+import NumberList from "./NumberList";
 import Toggle from "./Toggle";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <Clock />
     <Toggle />
     <LoginControl />
+    <NumberList numbers={[1, 2, 3, 4, 5]} />
     </>
   );
 }
