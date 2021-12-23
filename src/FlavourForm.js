@@ -3,15 +3,19 @@ import React from "react";
 class FlavourForm extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {value: 'Vanilla'};
+        this.state = {value: ['Vanilla', 'Chocolate']};
     }
 
     handleChange = (e) => {
-        this.setState({value: e.target.value});
+        this.setState((oldState) => {
+            console.log(oldState);
+            if (!oldState.value.includes(e.target.value)) return {value: [...oldState.value, e.target.value]};
+            return {value: oldState.value.filter(item => item !== e.target.value)};
+        });
     }
 
     handleSubmit = (e) => {
-        alert('You selected this flavour: ' + this.state.value);
+        alert('You selected these flavours: ' + this.state.value.join(", "));
         e.preventDefault();
     }
 
@@ -19,8 +23,8 @@ class FlavourForm extends React.Component {
         return (
             <form onSubmit={this.handleSubmit}>
                 <label>
-                    Select a flavour:{' '}
-                    <select value={this.state.value} onChange={this.handleChange}>
+                    Select at least one flavour:{' '}
+                    <select multiple value={this.state.value} onChange={this.handleChange}>
                         <option value="Vanilla">Vanilla</option>
                         <option value="Chocolate">Chocolate</option>
                         <option value="White Chocolate">White Chocolate</option>
