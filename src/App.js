@@ -1,4 +1,5 @@
 import Clock from "./Clock";
+import EssayForm from "./EssayForm";
 import LoginControl from "./LoginControl";
 import NameForm from "./NameForm";
 import NumberList from "./NumberList";
@@ -12,6 +13,7 @@ function App() {
     <LoginControl />
     <NumberList numbers={[1, 2, 3, 4, 5]} />
     <NameForm />
+    <EssayForm />
     </>
   );
 }
