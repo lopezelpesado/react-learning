@@ -4,6 +4,7 @@ import FlavourForm from "./FlavourForm";
 import LoginControl from "./LoginControl";
 import NameForm from "./NameForm";
 import NumberList from "./NumberList";
+import Reservation from "./Reservation";
 import Toggle from "./Toggle";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <NameForm />
     <EssayForm />
     <FlavourForm />
+    <Reservation />
     </>
   );
 }
