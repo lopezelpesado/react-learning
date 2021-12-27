@@ -1,3 +1,4 @@
+import Calculator from "./Calculator";
 import Clock from "./Clock";
 import EssayForm from "./EssayForm";
 import FlavourForm from "./FlavourForm";
@@ -18,6 +19,7 @@ function App() {
     <EssayForm />
     <FlavourForm />
     <Reservation />
+    <Calculator />
     </>
   );
 }
