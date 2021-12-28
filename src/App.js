@@ -7,6 +7,7 @@ import NameForm from "./NameForm";
 import NumberList from "./NumberList";
 import Reservation from "./Reservation";
 import Toggle from "./Toggle";
+import WelcomeDialog from "./WelcomeDialog";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
     <FlavourForm />
     <Reservation />
     <Calculator />
+    <WelcomeDialog />
     </>
   );
 }
