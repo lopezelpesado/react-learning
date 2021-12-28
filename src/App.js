@@ -6,6 +6,7 @@ import LoginControl from "./LoginControl";
 import NameForm from "./NameForm";
 import NumberList from "./NumberList";
 import Reservation from "./Reservation";
+import SignUpDialog from "./SignUpDialog";
 import Toggle from "./Toggle";
 import WelcomeDialog from "./WelcomeDialog";
 
@@ -22,6 +23,7 @@ function App() {
     <Reservation />
     <Calculator />
     <WelcomeDialog />
+    <SignUpDialog />
     </>
   );
 }
