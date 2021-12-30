@@ -1,10 +1,12 @@
 import Calculator from "./Calculator";
 import Clock from "./Clock";
 import EssayForm from "./EssayForm";
+import FilterableProductTable from "./FilterableProductTable";
 import FlavourForm from "./FlavourForm";
 import LoginControl from "./LoginControl";
 import NameForm from "./NameForm";
 import NumberList from "./NumberList";
+import PRODUCTS from "./PRODUCTS";
 import Reservation from "./Reservation";
 import SignUpDialog from "./SignUpDialog";
 import Toggle from "./Toggle";
@@ -24,6 +26,7 @@ function App() {
     <Calculator />
     <WelcomeDialog />
     <SignUpDialog />
+    <FilterableProductTable products={PRODUCTS} />
     </>
   );
 }
