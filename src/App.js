@@ -3,6 +3,7 @@ import Clock from "./Clock";
 import EssayForm from "./EssayForm";
 import FilterableProductTable from "./FilterableProductTable";
 import FlavourForm from "./FlavourForm";
+import Game from "./Game";
 import LoginControl from "./LoginControl";
 import NameForm from "./NameForm";
 import NumberList from "./NumberList";
@@ -15,6 +16,7 @@ import WelcomeDialog from "./WelcomeDialog";
 function App() {
   return (
     <>
+    <Game />
     <Clock />
     <Toggle />
     <LoginControl />
